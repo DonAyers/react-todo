@@ -1,34 +1,32 @@
-// function add(a, b){
-// 	 return a+b;
+// function add (a, b) {
+//   return a + b;
 // }
-
-// console.log(add(4,2));
-
-// var toAdd = [9,5];
-
+//
+// console.log(add(3, 1));
+//
+// var toAdd = [9, 5];
 // console.log(add(...toAdd));
 
-// var groupA = ['Bob', 'Tom'];
+// var groupA = ['Jen', 'Cory'];
 // var groupB = ['Vikram'];
-// var final = [3, ...groupA];
-
+// var final = [...groupB, 3, ...groupA];
+//
 // console.log(final);
 
-var person = ['Jim', 36];
-var person2 = ['Tim', 20];
+var person = ['Andrew', 25];
+var personTwo = ['Jen', 29];
+// Hi Andrew, you are 25
 
-function print(name, age){
-	console.log("Hi " + name + ", you are " + age);
+function greet (name, age) {
+  console.log('Hi ' + name + ', you are ' + age);
 }
+greet(...person);
+greet(...personTwo);
 
-var names = ['tim', 'jim'];
-var final = ['slim'];
-final = [...names, 'slim'];
+var names = ['Mike', 'Ben'];
+var final = ['Andrew', ...names];
+// Hi Andrew
 
-//console.log(final)
-//print(...person);
-
-final.forEach(function(name){
-	console.log('Hi ' + name);
-});  
-
+final.forEach(function (name) {
+  console.log('Hi ' + name);
+});
